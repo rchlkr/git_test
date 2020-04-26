@@ -7,26 +7,45 @@
         .nav-container {
             overflow: hidden;
         }
-        .top-nav {
+        .top-nav, .bottom-nav {
             list-style-type: none;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            font-size: 13px;
-            background-color: #fff;
+        }
+        .top-nav {    
+            font-size: 13px;    
+        }
+        .bottom-nav {
+            border-top: 1px solid #dfe1e5;
+            font-size: 14px;
+            background-color: #f2f2f2;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            width: 100%;
         }
         li {
             float: left;
         }
-        .nav-right {
+        .nav-right, .bottom-nav-right {
             float: right;
         }
-        .nav-links {
+        .nav-links, .bottom-nav-links {
             display: block;
-            padding: 15px;
             padding-right: 8px;
             text-decoration: none;
+        }
+        .nav-links {
+            padding: 15px;
             color: rgba(0,0,0,0.87);
+        }
+        .bottom-nav-links {
+            padding: 12px;
+            margin-left: 10px;
+            margin-right: 10px;
+            color: #5F6368;
         }
         a:hover {
             text-decoration: underline;
@@ -91,33 +110,7 @@
             border: 1px solid #c6c6c6;
             color: #222;
         }
-        .bottom-nav {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            border-top: 1px solid #dfe1e5;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            background-color: #f2f2f2;
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            width: 100%;
-        }
-        .bottom-nav-right {
-            float: right;
-        }
-        .bottom-nav-links {
-            display: block;
-            padding: 12px;
-            padding-right: 8px;
-            margin-left: 10px;
-            margin-right: 10px;
-            text-decoration: none;
-            color: #5F6368;
-        }
-        </style>
+    </style>
 </head>
     <div class="nav-container">
     <ul class="top-nav">
